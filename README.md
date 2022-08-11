@@ -25,4 +25,4 @@ Datasets and Notebooks for Pepsi Co. Training Course
 
 ## Contact Me
 <hr>
-Pleas email me at: joe.sasson@ashlingpartners.com to get in touch!
+Email me at: joe.sasson@ashlingpartners.com to get in touch!
