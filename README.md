@@ -18,6 +18,7 @@ Datasets and Notebooks for Pepsi Co. Training Course
 
 ## Information
 <hr>
+
 * Lectures can be found as PDF documents in the 'lectures' folder
 * Jupyter Notebooks & coding exercises can be found in the 'notebooks' folder
 * Datasets utilized for coding exercises can be found in the 'datasets' folder
