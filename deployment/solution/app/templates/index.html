@@ -1,12 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pepsi Co | ML API</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- W3 CSS FILE -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
+
 <body>
-    <h1>HELLO WORLD!</h1>
+
+    <section class="hero is-info is-fullheight">
+        <div class="container has-text-centered" style="margin-top: 250px;">
+            <div class="container">
+                <p class="title">
+                    Machine Learning Classifier API
+                </p>
+                <p class="subtitle">
+                    Send data to the model via API, below
+                </p>
+            </div>
+            <br>
+            <br>
+            <div id="file-js-example" class="file has-name is-boxed" style="margin-left: 130px;">
+                <form action="/model" method="post" enctype="multipart/form-data">
+                    <label class="file-label">
+                        <input class="file-input" type="file" name="upload">
+                        <span class="file-cta">
+                            <span class="file-icon">
+                                <i class="fa fa-upload"></i>
+                            </span>
+                            <span class="file-label">
+                                Choose a file…
+                            </span>
+                        </span>
+                        <span class="file-name">
+                            Screen Shot 2017-07-29 at 15.54.25.png
+                        </span>
+                    </label>
+                    <br>
+                    <p>Row:</p>
+                    <br>
+                    <input type="number" name="row" max="195">
+                    <br>
+                    <br>
+                    <button class="w3-btn w3-round-large w3-black" style="width: 150px;" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const fileInput = document.querySelector('#file-js-example input[type=file]');
+        fileInput.onchange = () => {
+          if (fileInput.files.length > 0) {
+            const fileName = document.querySelector('#file-js-example .file-name');
+            fileName.textContent = fileInput.files[0].name;
+          }
+        }
+    </script>
 </body>
+
 </html>
