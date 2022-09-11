@@ -14,7 +14,7 @@ Datasets and Notebooks for Pepsi Co. Training Course
 7. Day 7 - Advanced ML Algorithms - Neural Networks - Jupyter Notebook
 8. Day 8 - E2E Build - Putting It All Together - Jupyter Notebook
 9. Day 9 - Productization / Infrastructure - Lecture + VSCode
-10. Day 10 - Productization / Deployment - Lecture + VSCode
+10. Day 10 - Productization / Deployment - VSCode
 
 ## Information
 <hr>
